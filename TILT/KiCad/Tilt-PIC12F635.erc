@@ -1,0 +1,11 @@
+ERC report (13/06/2014 07:42:15)
+
+***** Sheet /
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (3,650 in,2,150 in): Pin 5 (passive) of component P1 is unconnected.
+ErrType(3): Pin connected to some others pins but no pin to drive it
+    @ (4,950 in,3,400 in): Pin 1 (power_in) of component U1 is not driven (Net 6).
+ErrType(2): Pin not connected (and no connect symbol found on this pin)
+    @ (3,650 in,2,250 in): Pin 6 (passive) of component P1 is unconnected.
+
+ >> Errors ERC: 0

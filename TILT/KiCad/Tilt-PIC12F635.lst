@@ -1,0 +1,40 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 13/06/2014 07:59:39
+#Cmp ( order = Reference )
+| C1         .01uF       
+| D2         1N4148      
+| DL1        LED         
+| IC1        4N25        
+| JP1        JLED        
+| K1         PWR         
+| K2         OCT         
+| K3         JAlarm      
+| P1         CONN_06     
+| R1         470K        
+| R2         4K7         
+| R3         680         
+| R4         66          
+| R5         47K         
+| SW1        TILT        
+| U1         PIC12F635   
+#End Cmp
+
+#Cmp ( order = Value )
+| .01uF        C1        
+| 1N4148       D2        
+| LED          DL1       
+| 4N25         IC1       
+| JLED         JP1       
+| PWR          K1        
+| OCT          K2        
+| JAlarm       K3        
+| CONN_06      P1        
+| 66           R4        
+| 680          R3        
+| 4K7          R2        
+| 47K          R5        
+| 470K         R1        
+| TILT         SW1       
+| PIC12F635    U1        
+#End Cmp
+
+#End List

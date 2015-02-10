@@ -1,0 +1,80 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 10/01/2015 09:10:30
+
+BeginCmp
+TimeStamp = /54AC2386;
+Reference = D1;
+ValeurCmp = DIODE;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B0DADB;
+Reference = IC1;
+ValeurCmp = 4N35;
+IdModule  = LnDIP-06_300;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B0DAC4;
+Reference = IC2;
+ValeurCmp = 4N35;
+IdModule  = LnDIP-06_300;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC2392;
+Reference = K1;
+ValeurCmp = RELAY_1RT;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC2398;
+Reference = Lamp1;
+ValeurCmp = LAMP;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54B0DDB5;
+Reference = MM1;
+ValeurCmp = MAMMUTH_07;
+IdModule  = LnSIP-07;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC238C;
+Reference = Q1;
+ValeurCmp = NPN;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC23D2;
+Reference = R1;
+ValeurCmp = 4K7;
+IdModule  = LnRes-500;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC2E1F;
+Reference = R2;
+ValeurCmp = 680;
+IdModule  = LnRes-500;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AC237A;
+Reference = R3;
+ValeurCmp = 10K;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /54AE29C4;
+Reference = SW1;
+ValeurCmp = default;
+IdModule  = LnSIP-02;
+EndCmp
+
+EndListe

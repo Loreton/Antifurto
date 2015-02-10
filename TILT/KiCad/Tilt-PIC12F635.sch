@@ -1,0 +1,473 @@
+EESchema Schematic File Version 2
+LIBS:LnConnectors
+LIBS:LnDevice
+LIBS:LnDiodiTransistors
+LIBS:LnMicroController
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Tilt-PIC12F635-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Tilt per antifurto con PIC12F635"
+Date "11 jul 2014"
+Rev "0.5"
+Comp "Loreto N."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PIC12F635_2 U1
+U 1 1 53664521
+P 4950 4350
+F 0 "U1" H 4700 5200 60  0000 C CNN
+F 1 "PIC12F635" H 5300 5200 60  0000 C CNN
+F 2 "~" H 4950 4350 60  0000 C CNN
+F 3 "~" H 4950 4350 60  0000 C CNN
+	1    4950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R1
+U 1 1 53664DEB
+P 2850 3600
+F 0 "R1" H 3000 3700 60  0000 C CNN
+F 1 "470K" H 3000 3550 60  0000 C CNN
+F 2 "~" H 2850 3600 60  0000 C CNN
+F 3 "~" H 2850 3600 60  0000 C CNN
+	1    2850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PULSANTENC SW1
+U 1 1 53666E7F
+P 2800 4550
+F 0 "SW1" V 2850 4400 50  0000 C CNN
+F 1 "TILT" V 2750 4400 50  0000 C CNN
+F 2 "~" H 2800 4550 60  0000 C CNN
+F 3 "~" H 2800 4550 60  0000 C CNN
+	1    2800 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CAP C1
+U 1 1 5396A68B
+P 3850 4250
+F 0 "C1" V 3900 4350 40  0000 L CNN
+F 1 ".01uF" V 3800 4300 40  0000 L CNN
+F 2 "~" H 3888 4100 30  0000 C CNN
+F 3 "~" H 3850 4250 60  0000 C CNN
+	1    3850 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_03 K1
+U 1 1 5396AB45
+P 2100 3200
+F 0 "K1" H 2050 3400 50  0000 C CNN
+F 1 "PWR" H 1950 3000 40  0000 C CNN
+F 2 "" H 2100 3200 60  0000 C CNN
+F 3 "" H 2100 3200 60  0000 C CNN
+	1    2100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4N25 OC1
+U 1 1 5397FE81
+P 8100 5350
+F 0 "OC1" H 7886 5529 40  0000 C CNN
+F 1 "4N25" H 8280 5165 40  0000 C CNN
+F 2 "DIP6" H 7901 5170 29  0000 C CNN
+F 3 "" H 8100 5350 60  0000 C CNN
+	1    8100 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_06 P1
+U 1 1 53994C08
+P 3350 2000
+F 0 "P1" H 3350 2350 60  0000 C CNN
+F 1 "CONN_06" H 3350 1650 60  0000 C CNN
+F 2 "~" H 3350 2000 60  0000 C CNN
+F 3 "~" H 3350 2000 60  0000 C CNN
+	1    3350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 53994E0E
+P 4000 1550
+F 0 "#PWR01" H 4000 1650 30  0001 C CNN
+F 1 "VCC" H 4000 1650 30  0000 C CNN
+F 2 "" H 4000 1550 60  0000 C CNN
+F 3 "" H 4000 1550 60  0000 C CNN
+	1    4000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 53994E1D
+P 4950 4850
+F 0 "#PWR02" H 4950 4850 30  0001 C CNN
+F 1 "GND" H 4950 4780 30  0001 C CNN
+F 2 "" H 4950 4850 60  0000 C CNN
+F 3 "" H 4950 4850 60  0000 C CNN
+	1    4950 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR03
+U 1 1 53994E2C
+P 9300 5100
+F 0 "#PWR03" H 9300 5050 20  0001 C CNN
+F 1 "+12V" H 9300 5200 30  0000 C CNN
+F 2 "" H 9300 5100 60  0000 C CNN
+F 3 "" H 9300 5100 60  0000 C CNN
+	1    9300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R2
+U 1 1 5399FA94
+P 3750 3600
+F 0 "R2" H 3900 3700 60  0000 C CNN
+F 1 "25K" H 3900 3550 60  0000 C CNN
+F 2 "~" H 3750 3600 60  0000 C CNN
+F 3 "~" H 3750 3600 60  0000 C CNN
+	1    3750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R4
+U 1 1 5399FB90
+P 7400 5000
+F 0 "R4" H 7550 5150 60  0000 C CNN
+F 1 "33" H 7550 5000 60  0000 C CNN
+F 2 "~" H 7400 5000 60  0000 C CNN
+F 3 "~" H 7400 5000 60  0000 C CNN
+	1    7400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L RESISTOR R5
+U 1 1 5399FB96
+P 8650 5050
+F 0 "R5" H 8500 5250 60  0000 C CNN
+F 1 "47K" H 8500 5100 60  0000 C CNN
+F 2 "~" H 8650 5050 60  0000 C CNN
+F 3 "~" H 8650 5050 60  0000 C CNN
+	1    8650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02 K3
+U 1 1 5399FC61
+P 9000 5450
+F 0 "K3" H 8900 5650 50  0000 C CNN
+F 1 "JAlarm" H 8700 5450 40  0000 C CNN
+F 2 "~" H 9000 5450 60  0000 C CNN
+F 3 "~" H 9000 5450 60  0000 C CNN
+	1    9000 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 5100 7400 5350
+Wire Wire Line
+	7400 5250 7750 5250
+Wire Wire Line
+	7750 5450 7700 5450
+Wire Wire Line
+	7700 5450 7700 5700
+Wire Wire Line
+	7700 5700 7100 5700
+Wire Wire Line
+	8450 5350 8650 5350
+Wire Wire Line
+	8650 5350 8650 5150
+Wire Wire Line
+	8450 5450 8900 5450
+Wire Wire Line
+	8650 4800 8650 4700
+Wire Wire Line
+	8650 4700 8900 4700
+Wire Wire Line
+	8900 4700 8900 5350
+Wire Wire Line
+	5850 4250 7400 4250
+Wire Wire Line
+	7400 4250 7400 4750
+Wire Notes Line
+	7200 4400 9550 4400
+Wire Notes Line
+	9550 4400 9550 5950
+Wire Notes Line
+	9550 5950 7200 5950
+Wire Notes Line
+	7200 5950 7200 4400
+Text Notes 7450 4550 0    60   ~ 12
+Sensore Magnetico Wi-Fi
+Text Notes 8250 5950 0    60   ~ 12
+20uA a riposo
+Wire Wire Line
+	5850 3850 6700 3850
+Wire Wire Line
+	4950 4600 4950 4850
+Wire Wire Line
+	4050 4250 4300 4250
+Wire Wire Line
+	3750 3700 3750 3850
+Wire Wire Line
+	3600 3850 4300 3850
+Wire Wire Line
+	4950 3100 4950 3400
+Wire Wire Line
+	2200 3100 4950 3100
+Wire Wire Line
+	3750 2900 3750 3350
+Connection ~ 3750 3100
+Wire Wire Line
+	2850 3700 2850 4500
+$Comp
+L GND #PWR04
+U 1 1 5399FE8D
+P 2850 5100
+F 0 "#PWR04" H 2850 5100 30  0001 C CNN
+F 1 "GND" H 2850 5030 30  0001 C CNN
+F 2 "" H 2850 5100 60  0000 C CNN
+F 3 "" H 2850 5100 60  0000 C CNN
+	1    2850 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4600 2850 5100
+$Comp
+L GND #PWR05
+U 1 1 5399FEB8
+P 2200 3650
+F 0 "#PWR05" H 2200 3650 30  0001 C CNN
+F 1 "GND" H 2200 3580 30  0001 C CNN
+F 2 "" H 2200 3650 60  0000 C CNN
+F 3 "" H 2200 3650 60  0000 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3300 2200 3650
+Wire Wire Line
+	3650 4250 2850 4250
+Connection ~ 2850 4250
+Text GLabel 3500 4050 0    60   Input ~ 12
+ICSPDAT
+Wire Wire Line
+	4300 4050 3500 4050
+Text GLabel 3600 3850 0    60   Input ~ 12
+VPP/MCLR
+Connection ~ 3750 3850
+Wire Wire Line
+	2850 3350 2850 3100
+Connection ~ 2850 3100
+Text GLabel 4450 1750 2    60   Input ~ 12
+VPP/MCLR
+Text GLabel 4450 2050 2    60   Input ~ 12
+ICSPDAT
+Text GLabel 4450 2250 2    60   Input ~ 12
+ICSPCLK
+Text GLabel 4450 2450 2    60   Input ~ 12
+AUX
+$Comp
+L GND #PWR06
+U 1 1 539A0161
+P 4000 2550
+F 0 "#PWR06" H 4000 2550 30  0001 C CNN
+F 1 "GND" H 4000 2480 30  0001 C CNN
+F 2 "" H 4000 2550 60  0000 C CNN
+F 3 "" H 4000 2550 60  0000 C CNN
+	1    4000 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1850 3500 1850
+Wire Wire Line
+	4000 2550 4000 1950
+Wire Wire Line
+	4000 1950 3500 1950
+Wire Wire Line
+	3500 1750 4450 1750
+Wire Wire Line
+	3500 2050 4450 2050
+Wire Wire Line
+	4000 1550 4000 1850
+Text Notes 3150 5200 0    60   ~ 12
+Il condensatore C1 e la resistenza R2\nservono per ridurre ulteriormente il consumo.\nCon i valori indicati R=470K e C=10nF si arriva\nad un consumo di circa 70uA a riposo.
+Text GLabel 6700 3850 2    60   Input ~ 12
+ICSPCLK
+$Comp
+L GND #PWR07
+U 1 1 539A07EC
+P 7100 5850
+F 0 "#PWR07" H 7100 5850 30  0001 C CNN
+F 1 "GND" H 7100 5780 30  0001 C CNN
+F 2 "" H 7100 5850 60  0000 C CNN
+F 3 "" H 7100 5850 60  0000 C CNN
+	1    7100 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 5700
+Text Notes 7600 6150 2    60   ~ 12
+OCT serve nel caso\ndovessi mettere \nl'accoppiatore ottico \nlontano dal uP.
+NoConn ~ 2200 3200
+NoConn ~ 5850 4050
+$Comp
+L PWR_FLAG #FLG08
+U 1 1 539A8F20
+P 1400 2100
+F 0 "#FLG08" H 1400 2195 30  0001 C CNN
+F 1 "PWR_FLAG" H 1400 2280 30  0000 C CNN
+F 2 "" H 1400 2100 60  0000 C CNN
+F 3 "" H 1400 2100 60  0000 C CNN
+	1    1400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 539A8F2F
+P 1750 2100
+F 0 "#FLG09" H 1750 2195 30  0001 C CNN
+F 1 "PWR_FLAG" H 1750 2280 30  0000 C CNN
+F 2 "" H 1750 2100 60  0000 C CNN
+F 3 "" H 1750 2100 60  0000 C CNN
+	1    1750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 539A8F3E
+P 2100 2100
+F 0 "#FLG010" H 2100 2195 30  0001 C CNN
+F 1 "PWR_FLAG" H 2100 2280 30  0000 C CNN
+F 2 "" H 2100 2100 60  0000 C CNN
+F 3 "" H 2100 2100 60  0000 C CNN
+	1    2100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 539A8F4B
+P 2100 2200
+F 0 "#PWR011" H 2100 2300 30  0001 C CNN
+F 1 "VCC" H 2100 2300 30  0000 C CNN
+F 2 "" H 2100 2200 60  0000 C CNN
+F 3 "" H 2100 2200 60  0000 C CNN
+	1    2100 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 539A8F51
+P 1750 2250
+F 0 "#PWR012" H 1750 2250 30  0001 C CNN
+F 1 "GND" H 1750 2180 30  0001 C CNN
+F 2 "" H 1750 2250 60  0000 C CNN
+F 3 "" H 1750 2250 60  0000 C CNN
+	1    1750 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR013
+U 1 1 539A8F57
+P 1400 2200
+F 0 "#PWR013" H 1400 2150 20  0001 C CNN
+F 1 "+12V" H 1400 2300 30  0000 C CNN
+F 2 "" H 1400 2200 60  0000 C CNN
+F 3 "" H 1400 2200 60  0000 C CNN
+	1    1400 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 2200 1400 2100
+Wire Wire Line
+	1750 2250 1750 2100
+Wire Wire Line
+	2100 2200 2100 2100
+NoConn ~ 8450 5250
+Wire Wire Line
+	3500 2150 4250 2150
+Wire Wire Line
+	4250 2150 4250 2250
+Wire Wire Line
+	4250 2250 4450 2250
+$Comp
+L VCC #PWR014
+U 1 1 539A93DB
+P 3750 2900
+F 0 "#PWR014" H 3750 3000 30  0001 C CNN
+F 1 "VCC" H 3750 3000 30  0000 C CNN
+F 2 "" H 3750 2900 60  0000 C CNN
+F 3 "" H 3750 2900 60  0000 C CNN
+	1    3750 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3500 2250
+Wire Notes Line
+	3500 2250 4150 2250
+Wire Notes Line
+	4150 2250 4150 2450
+Wire Notes Line
+	4150 2450 4450 2450
+Text Label 6450 4250 0    60   Italic 12
+Out
+Text Label 3000 4250 0    60   Italic 12
+Tilt
+$Comp
+L LED DL1
+U 1 1 53B97AE1
+P 7400 5500
+F 0 "DL1" V 7500 5600 50  0000 C CNN
+F 1 "LED" V 7300 5600 50  0000 C CNN
+F 2 "~" H 7400 5500 60  0000 C CNN
+F 3 "~" H 7400 5500 60  0000 C CNN
+	1    7400 5500
+	0    1    1    0   
+$EndComp
+Connection ~ 7400 5250
+Wire Wire Line
+	7400 5650 7400 5700
+Wire Wire Line
+	9100 5350 9300 5350
+Wire Wire Line
+	9300 5350 9300 5100
+Wire Wire Line
+	7100 5700 7100 5850
+$EndSCHEMATC
